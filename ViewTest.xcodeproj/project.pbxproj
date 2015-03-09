@@ -14,6 +14,11 @@
 		E789B16D1AADE8C500364F85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E789B16C1AADE8C500364F85 /* Images.xcassets */; };
 		E789B1701AADE8C500364F85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E789B16E1AADE8C500364F85 /* LaunchScreen.xib */; };
 		E789B17C1AADE8C500364F85 /* ViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E789B17B1AADE8C500364F85 /* ViewTestTests.m */; };
+		E789B1871AADEA5700364F85 /* Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = E789B1861AADEA5700364F85 /* Anim.m */; };
+		E789B1891AADEAEC00364F85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E789B1881AADEAEC00364F85 /* CoreGraphics.framework */; };
+		E789B18B1AADEAF600364F85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E789B18A1AADEAF600364F85 /* QuartzCore.framework */; };
+		E789B18D1AADEAFE00364F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E789B18C1AADEAFE00364F85 /* UIKit.framework */; };
+		E789B18F1AADEB0C00364F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E789B18E1AADEB0C00364F85 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		E789B1751AADE8C500364F85 /* ViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E789B17A1AADE8C500364F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E789B17B1AADE8C500364F85 /* ViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTestTests.m; sourceTree = "<group>"; };
+		E789B1851AADEA5700364F85 /* Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anim.h; sourceTree = "<group>"; };
+		E789B1861AADEA5700364F85 /* Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Anim.m; sourceTree = "<group>"; };
+		E789B1881AADEAEC00364F85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E789B18A1AADEAF600364F85 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E789B18C1AADEAFE00364F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E789B18E1AADEB0C00364F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E789B18F1AADEB0C00364F85 /* Foundation.framework in Frameworks */,
+				E789B18D1AADEAFE00364F85 /* UIKit.framework in Frameworks */,
+				E789B18B1AADEAF600364F85 /* QuartzCore.framework in Frameworks */,
+				E789B1891AADEAEC00364F85 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 		E789B1531AADE8C400364F85 = {
 			isa = PBXGroup;
 			children = (
+				E789B1901AADEB8700364F85 /* Frameworks */,
 				E789B15E1AADE8C500364F85 /* ViewTest */,
 				E789B1781AADE8C500364F85 /* ViewTestTests */,
 				E789B15D1AADE8C400364F85 /* Products */,
@@ -81,6 +97,8 @@
 		E789B15E1AADE8C500364F85 /* ViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				E789B1851AADEA5700364F85 /* Anim.h */,
+				E789B1861AADEA5700364F85 /* Anim.m */,
 				E789B1631AADE8C500364F85 /* AppDelegate.h */,
 				E789B1641AADE8C500364F85 /* AppDelegate.m */,
 				E789B1661AADE8C500364F85 /* ViewController.h */,
@@ -117,6 +135,17 @@
 				E789B17A1AADE8C500364F85 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E789B1901AADEB8700364F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E789B18E1AADEB0C00364F85 /* Foundation.framework */,
+				E789B18C1AADEAFE00364F85 /* UIKit.framework */,
+				E789B18A1AADEAF600364F85 /* QuartzCore.framework */,
+				E789B1881AADEAEC00364F85 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +250,7 @@
 			files = (
 				E789B1681AADE8C500364F85 /* ViewController.m in Sources */,
 				E789B1651AADE8C500364F85 /* AppDelegate.m in Sources */,
+				E789B1871AADEA5700364F85 /* Anim.m in Sources */,
 				E789B1621AADE8C500364F85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +442,7 @@
 				E789B1811AADE8C500364F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E789B1821AADE8C500364F85 /* Build configuration list for PBXNativeTarget "ViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				E789B1841AADE8C500364F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
